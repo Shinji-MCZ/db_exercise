@@ -72,14 +72,14 @@ mysql> select * from items order by id desc;
 5-4. 平均: price
 
 ```sql
-mysql> SELECT AVG(price) from items;
+mysql> select AVG(price) from items;
 ```
 
 
 5-5. あいまい検索
 
 ```sql
-mysql> SELECT * from items WHERE description LIKE '%詰合せ%';
+mysql> SELECT * from items WHERE description LIKE '%詰合せ%'
 ```
 
 5-6. 結合
