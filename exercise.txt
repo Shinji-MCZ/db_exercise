@@ -7,13 +7,13 @@
 2. データベース作成
 
 ```sql
-mysql> create database camp;
+mysql> create database camp
 ```
 
 3. データベースの選択
 
 ```sql
-mysql> use camp;
+mysql> use camp
 ```
 
 4-1. itemsテーブルの作成
@@ -72,7 +72,7 @@ mysql> select * from items order by id desc;
 5-4. 平均: price
 
 ```sql
-mysql> select AVG(price) from items;
+mysql> SELECT AVG(price) from items;
 ```
 
 
@@ -85,41 +85,39 @@ mysql> SELECT * from items WHERE description LIKE '%詰合せ%';
 5-6. 結合
 
 ```sql
-mysql> SELECT * FROM items INNER JOIN categories ON price < 7000 = categories.name;
-
+mysql> 
 ```
 
 6-1. 価格
 
 ```sql
-mysql> UPDATE items SET price=price + 500 WHERE price > 7000;
+mysql>
 ```
 
 
 7-1. 価格
 
 ```sql
-mysql> DELETE FROM items WHERE price < 4000 ;
+mysql>
 ```
 
 
 8-1. items
 
 ```sql
-mysql> drop table items;
-
+mysql>
 ```
 
 
 8-2. categories
 
 ```sql
-mysql> drop table categories;
+mysql>
 ```
 
 
 9. データベースの削除
 
 ```sql
-mysql>drop date base camp;
+mysql>
 ```
